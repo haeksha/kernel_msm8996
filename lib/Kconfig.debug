@@ -198,7 +198,7 @@ config FRAME_WARN
 	default 0 if KASAN
 	default 2048 if GCC_PLUGIN_LATENT_ENTROPY
 	default 1024 if !64BIT
-	default 2048 if 64BIT
+	default 4112 if 64BIT
 	help
 	  Tell gcc to warn at build time for stack frames larger than this.
 	  Setting this too low will cause a lot of warnings.
